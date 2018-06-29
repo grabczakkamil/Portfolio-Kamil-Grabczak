@@ -142,14 +142,22 @@ li:hover i,
 }
 
 #home header h1 {
-    animation: skip 2s infinite;
+    animation: skip 1.5s infinite;
     font-size: 60px;
     margin: 10px 0 0 0;
     color: white;
+    transform:rotate(-5deg);
+}
+#home header h1 span {
+    animation: skip 3.5s infinite;
 }
 
 #home header h2 {
     margin: 5px 0 0 0;
+    transform:rotate(-5deg);
+    color: #a624a0;
+    text-shadow: 0 0 20px deeppink;
+    
 }
 
 #home span a i {
@@ -168,96 +176,15 @@ li:hover i,
 /*Name animation*/
 
 @keyframes skip {
-    0% {
-        text-shadow: 5px 0 0 #01eccb
-    }
-    3% {
-        text-shadow: -5px 0 0 #01eccb
-    }
-    9% {
-        text-shadow: 2px 0 0 #01eccb
-    }
-    10% {
-        text-shadow: -10px 10px 0 #393cb3, 10px -10px 0 #01eccb
-    }
-    12% {
-        text-shadow: 2px -0 0 #393cb3
-    }
-    20% {
-        text-shadow: 5px 0 0 #393cb3
-    }
-    21% {
-        text-shadow: -2px 0 0 #fdd862
-    }
-    23% {
-        text-shadow: -5px 0 0 #fdd862
-    }
-    28% {
-        text-shadow: 1px 0 0 #fdd862
-    }
-    35% {
-        text-shadow: 6px 0 0 #01eccb
-    }
-    39% {
-        text-shadow: -8px -6px 0 #01eccb, 8px 6px 0 #393cb3
-    }
-    40% {
-        text-shadow: -7px 0 0 #01eccb
-    }
-    43% {
-        text-shadow: 5px 0 0 #01eccb
-    }
-    47% {
-        text-shadow: -2px 0 0 #393cb3
-    }
-    51% {
-        text-shadow: 10px 10px 0 #393cb3, -10px -10px 0 #e052c2
-    }
-    55% {
-        text-shadow: -3px 0 0 #393cb3
-    }
-    58% {
-        text-shadow: 3px 0 0 #e052c2
-    }
-    61% {
-        text-shadow: -6px 0 0 #e052c2
-    }
-    64% {
-        text-shadow: -3px 0 0 #01eccb
-    }
-    69% {
-        text-shadow: 7px 0 0 #01eccb
-    }
-    73% {
-        text-shadow: 4px 0 0 #e052c2
-    }
-    76% {
-        text-shadow: -8px -6px 0 #e052c2, 8px 6px 0 #fdd862
-    }
-    80% {
-        text-shadow: 2px 0 0 #01eccb
-    }
-    81% {
-        text-shadow: 6px 0 0 #01eccb
-    }
-    85% {
-        text-shadow: -2px 0 0 #e052c2
-    }
-    89% {
-        text-shadow: -6px 0 0 #e052c2
-    }
-    90% {
-        text-shadow: 3px 0 0 #393cb3
-    }
-    93% {
-        text-shadow: 6px 0 0 #393cb3
-    }
-    98% {
-        text-shadow: 1px 0 0 #01eccb
-    }
-    100% {
-        text-shadow: 2px 0 0 #e052c2
-    }
+  0% {text-shadow: 0 0 0; color:#353535;}
+15% {text-shadow: 0 0 20px #46f1d9; color: #01eccb}
+30% {text-shadow: 0 0 10px #01eccb; color:#01eccb;}
+45% {text-shadow: 0 0 20px #46f1d9; color: #01eccb}
+60% {text-shadow: 0 0 10px #01eccb; color: #01eccb}
+70% {text-shadow: 0 0 40px #46f1d9; color: #01eccb}
+80% {text-shadow: 0 0 10px #01eccb; color: #01eccb}
+90% {text-shadow: 0 0 40px #46f1d9; color: #01eccb}
+100% {text-shadow: 0 0 30px #46f1d9; color: #01eccb}
 }
 
 /*Scroll down animation*/
