@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 27/06/2018 20:23
+  	Creation date: 01/07/2018 20:57
   	*/
 
 @font-face {
@@ -29,26 +29,27 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-whatsapp:before { content: "\f100"; }
-.flaticon-linkedin:before { content: "\f101"; }
-.flaticon-github:before { content: "\f102"; }
-.flaticon-google-plus:before { content: "\f103"; }
-.flaticon-facebook:before { content: "\f104"; }
-.flaticon-multimedia-option:before { content: "\f105"; }
-.flaticon-down-arrow-2:before { content: "\f106"; }
-.flaticon-download-3:before { content: "\f107"; }
-.flaticon-down-arrow-1:before { content: "\f108"; }
-.flaticon-down-arrow:before { content: "\f109"; }
-.flaticon-download-2:before { content: "\f10a"; }
-.flaticon-download:before { content: "\f10b"; }
-.flaticon-arrow:before { content: "\f10c"; }
-.flaticon-design-skills:before { content: "\f10d"; }
-.flaticon-skills-2:before { content: "\f10e"; }
-.flaticon-body-building:before { content: "\f10f"; }
-.flaticon-skills-1:before { content: "\f110"; }
-.flaticon-skills:before { content: "\f111"; }
-.flaticon-passport:before { content: "\f112"; }
-.flaticon-portfolio:before { content: "\f113"; }
-.flaticon-message:before { content: "\f114"; }
-.flaticon-home:before { content: "\f115"; }
-.flaticon-question:before { content: "\f116"; }
+.flaticon-responsive-design-symbol:before { content: "\f100"; }
+.flaticon-whatsapp:before { content: "\f101"; }
+.flaticon-linkedin:before { content: "\f102"; }
+.flaticon-github:before { content: "\f103"; }
+.flaticon-google-plus:before { content: "\f104"; }
+.flaticon-facebook:before { content: "\f105"; }
+.flaticon-multimedia-option:before { content: "\f106"; }
+.flaticon-down-arrow-2:before { content: "\f107"; }
+.flaticon-download-3:before { content: "\f108"; }
+.flaticon-down-arrow-1:before { content: "\f109"; }
+.flaticon-down-arrow:before { content: "\f10a"; }
+.flaticon-download-2:before { content: "\f10b"; }
+.flaticon-download:before { content: "\f10c"; }
+.flaticon-arrow:before { content: "\f10d"; }
+.flaticon-design-skills:before { content: "\f10e"; }
+.flaticon-skills-2:before { content: "\f10f"; }
+.flaticon-body-building:before { content: "\f110"; }
+.flaticon-skills-1:before { content: "\f111"; }
+.flaticon-skills:before { content: "\f112"; }
+.flaticon-passport:before { content: "\f113"; }
+.flaticon-portfolio:before { content: "\f114"; }
+.flaticon-message:before { content: "\f115"; }
+.flaticon-home:before { content: "\f116"; }
+.flaticon-question:before { content: "\f117"; }
