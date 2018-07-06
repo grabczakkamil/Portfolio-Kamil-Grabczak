@@ -18,3 +18,6 @@ $(function() {
         $(".about-question:nth-of-type(4)").toggle(1000);
     })
 });
+
+window.sr = ScrollReveal({reset:true});
+sr.reveal('.scroll-reveall');

@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 01/07/2018 20:57
+  	Creation date: 06/07/2018 21:38
   	*/
 
 @font-face {
@@ -29,27 +29,39 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-responsive-design-symbol:before { content: "\f100"; }
-.flaticon-whatsapp:before { content: "\f101"; }
-.flaticon-linkedin:before { content: "\f102"; }
-.flaticon-github:before { content: "\f103"; }
-.flaticon-google-plus:before { content: "\f104"; }
-.flaticon-facebook:before { content: "\f105"; }
-.flaticon-multimedia-option:before { content: "\f106"; }
-.flaticon-down-arrow-2:before { content: "\f107"; }
-.flaticon-download-3:before { content: "\f108"; }
-.flaticon-down-arrow-1:before { content: "\f109"; }
-.flaticon-down-arrow:before { content: "\f10a"; }
-.flaticon-download-2:before { content: "\f10b"; }
-.flaticon-download:before { content: "\f10c"; }
-.flaticon-arrow:before { content: "\f10d"; }
-.flaticon-design-skills:before { content: "\f10e"; }
-.flaticon-skills-2:before { content: "\f10f"; }
-.flaticon-body-building:before { content: "\f110"; }
-.flaticon-skills-1:before { content: "\f111"; }
-.flaticon-skills:before { content: "\f112"; }
-.flaticon-passport:before { content: "\f113"; }
-.flaticon-portfolio:before { content: "\f114"; }
-.flaticon-message:before { content: "\f115"; }
-.flaticon-home:before { content: "\f116"; }
-.flaticon-question:before { content: "\f117"; }
+.flaticon-pointing-right-2:before { content: "\f100"; }
+.flaticon-pointing-right-1:before { content: "\f101"; }
+.flaticon-pointing-right:before { content: "\f102"; }
+.flaticon-double-arrow:before { content: "\f103"; }
+.flaticon-next-1:before { content: "\f104"; }
+.flaticon-sketch:before { content: "\f105"; }
+.flaticon-arrow-1:before { content: "\f106"; }
+.flaticon-next:before { content: "\f107"; }
+.flaticon-fast-forward:before { content: "\f108"; }
+.flaticon-chevron:before { content: "\f109"; }
+.flaticon-send:before { content: "\f10a"; }
+.flaticon-right:before { content: "\f10b"; }
+.flaticon-responsive-design-symbol:before { content: "\f10c"; }
+.flaticon-whatsapp:before { content: "\f10d"; }
+.flaticon-linkedin:before { content: "\f10e"; }
+.flaticon-github:before { content: "\f10f"; }
+.flaticon-google-plus:before { content: "\f110"; }
+.flaticon-facebook:before { content: "\f111"; }
+.flaticon-multimedia-option:before { content: "\f112"; }
+.flaticon-down-arrow-2:before { content: "\f113"; }
+.flaticon-download-3:before { content: "\f114"; }
+.flaticon-down-arrow-1:before { content: "\f115"; }
+.flaticon-down-arrow:before { content: "\f116"; }
+.flaticon-download-2:before { content: "\f117"; }
+.flaticon-download:before { content: "\f118"; }
+.flaticon-arrow:before { content: "\f119"; }
+.flaticon-design-skills:before { content: "\f11a"; }
+.flaticon-skills-2:before { content: "\f11b"; }
+.flaticon-body-building:before { content: "\f11c"; }
+.flaticon-skills-1:before { content: "\f11d"; }
+.flaticon-skills:before { content: "\f11e"; }
+.flaticon-passport:before { content: "\f11f"; }
+.flaticon-portfolio:before { content: "\f120"; }
+.flaticon-message:before { content: "\f121"; }
+.flaticon-home:before { content: "\f122"; }
+.flaticon-question:before { content: "\f123"; }
