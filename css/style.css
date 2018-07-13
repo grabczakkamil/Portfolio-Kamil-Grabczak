@@ -5,11 +5,15 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     background-color: #1f2833;
     color: #c5c6c7;
     margin: 0;
     padding: 0;
+}
+
+button, input {
+    font-family: 'Comfortaa', sans-serif;
 }
 
 section,
@@ -18,7 +22,6 @@ footer {
 }
 
 h1 {
-    font-family: 'Pacifico', cursive;
     color: #47ffef;
     font-size: 50px;
     text-shadow: 4px 4px 3px black;
@@ -62,12 +65,12 @@ a:hover {
     width: 120px;
     height: auto;
     padding: 15px;
-    border-bottom: 2px groove #1f2833;
+    /*    border-bottom: 2px groove #1f2833;*/
     transition: transform 0.5s ease-in-out;
 }
 
 #logo img:hover {
-    transform: rotate3d(10, 10, 10, 360deg);
+    /*    transform: rotate3d(10, 10, 10, 360deg);*/
 }
 
 #main-nav {
@@ -85,8 +88,7 @@ a:hover {
 #main-nav ul li {
     display: block;
     height: 90px;
-    border-bottom: 2px groove #1f2833;
-
+    /*    border-bottom: 2px groove #1f2833;*/
 }
 
 #main-nav ul li a {
@@ -113,8 +115,10 @@ a:hover {
 }
 
 #main-nav ul li:hover {
+    /*
     background-color: #00242d;
     border-bottom: 2px groove black;
+*/
 }
 
 /*hover for all icons on home page*/
@@ -143,16 +147,20 @@ li:hover i,
 }
 
 #home header h1 {
-    animation: skip 1.5s infinite;
+    font-family: 'Pacifico', cursive;
+    animation: skip 1s infinite;
     font-size: 60px;
     margin: 10px 0 0 0;
-    color: white;
+    color: #01eccb;
+    text-shadow: 0 0 20px #46f1d9;
     transform: rotate(-5deg);
 }
 
+/*
 #home header h1 span {
     animation: skip 3.5s both;
 }
+*/
 
 #home header h2 {
     margin: 5px 0 0 0;
@@ -177,6 +185,22 @@ li:hover i,
 
 /*Name animation*/
 
+@keyframes skip {
+    0% {
+        text-shadow: 0 0 15px #46f1d9;
+        color: #01eccb;
+    }
+    50% {
+        text-shadow: 0 0 20px #01eccb;
+        color: #01eccb;
+    }
+    100% {
+        text-shadow: 0 0 15px #46f1d9;
+        color: #01eccb;
+    }
+}
+
+/*
 @keyframes skip {
     0% {
         text-shadow: 0 0 0;
@@ -215,6 +239,7 @@ li:hover i,
         color: #01eccb
     }
 }
+*/
 
 /*Scroll down animation*/
 
@@ -239,13 +264,20 @@ li:hover i,
 /*About*/
 
 #about {
-    background-image: linear-gradient(to bottom, rgba(0, 30, 45, 0.8), rgba(0, 36, 45, 0.8)), url(../img/o-mnie.jpg);
+    background-image: url(../img/o-mnie.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.parallax {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
     display: flex;
-    justify-content: flex-start;
+}
+
+#about .parallax{
+      justify-content: flex-start;
     flex-direction: column;
     align-items: center;
 }
@@ -270,35 +302,24 @@ li:hover i,
 }
 
 #about .btn-about-question:nth-of-type(1),
-.about-question:nth-of-type(1) {
-    /*    animation: arrow-vibration 1.25s linear infinite;*/
-}
+.about-question:nth-of-type(1) {}
 
 #about .btn-about-question:nth-of-type(2),
 .about-question:nth-of-type(2) {
-    /*    animation: arrow-vibration 1.1s linear infinite;*/
+
     margin-left: 50px;
 }
 
 #about .btn-about-question:nth-of-type(3),
 .about-question:nth-of-type(3) {
-    /*    animation: arrow-vibration 1.15s linear infinite;*/
     margin-left: 100px;
 }
 
 #about .btn-about-question:nth-of-type(4),
 .about-question:nth-of-type(4) {
-    /*    animation: arrow-vibration 1.2s linear infinite;*/
     margin-left: 150px;
 }
 
-/*
-@keyframes arrow-vibration {
-    0% { transform: translateX(-3px) }
-    50% { transform: translateX(3px) }
-    100% { transform: translateX(-3px) }
-}
-*/
 
 #about .btn-about-question {
     width: 900px;
@@ -324,25 +345,29 @@ li:hover i,
 
 #about .btn-about-question:hover span {
     color: deeppink;
-    text-shadow: 0 0 10px deeppink;}
+    text-shadow: 0 0 10px deeppink;
+}
 
 #about .about-question p {
     width: 900px;
     padding: 0 0 0 40px;
 }
 
-#about .btn-about, .write-to-me {
+#about .btn-about,
+.write-to-me {
     align-self: center;
     text-align: center;
 }
+
 #about .write-to-me {
     font-size: 18px;
     margin-top: 40px;
     font-style: italic;
     line-height: 30px;
     text-shadow: 3px 3px 1px black;
-    
+
 }
+
 #about .btn-about {
     display: block;
     color: #c5c6c7;
@@ -355,18 +380,19 @@ li:hover i,
     text-shadow: 3px 3px 1px black;
 }
 
+#about .btn-about:active {
+    transform: translateY(4px);
+}
+
+
 /*Skills*/
 
 #skills {
     display: flex;
     flex-direction: column;
     text-align: center;
-    /*
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../img/skills.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-*/
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
 #skills #skills-container {
@@ -380,10 +406,18 @@ li:hover i,
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#skills #skills-container .skills-pack:nth-of-type(2) .skills-icons {
+    height: 200px;
 }
 
 #skills #skills-container .skills-pack .skills-icons .icon-with-name {
     transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #skills #skills-container .skills-pack .skills-icons .icon-with-name:hover {
@@ -391,54 +425,64 @@ li:hover i,
     transform: scale(1.5);
 }
 
-/*
-#skills #skills-container .skills-pack:nth-of-type(1) {
-    -webkit-animation: text 1s linear 0.5s both;
-    color: transparent;
-*/
-
-/*}*/
 
 #skills #skills-container .skills-pack:nth-of-type(2) {
-    flex-basis: 300px;
+    flex-basis: 280px;
     margin-top: 50px;
-    /*
-    -webkit-animation: text 1s linear 1.5s both;
-    color: transparent;
-*/
+
 }
 
-/*
-#skills #skills-container .skills-pack:nth-of-type(3) {
-    -webkit-animation: text 1s linear 1s both;
-    color: transparent;
+.all-skills-icons {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
 }
-*/
 
-/*
-@-webkit-keyframes text {
-    0% {
-        opacity: 0;
-        text-shadow: 0 0 40px #c5c6c7;
-        -webkit-transform: scale(1.3);
-    }
-    75% {
-        opacity: 0.5;
-        text-shadow: 0px 0px 10px #c5c6c7;
-        -webkit-transform: scale(1.1);
-    }
-    100% {
-        opacity: 1;
-        color: #c5c6c7;
-        text-shadow: 4px 4px 3px black;
-        -webkit-transform: scale(1);
-    }
+.icon-html5 {
+    background-image: url(../img/html.svg);
 }
-*/
 
-#skills #skills-container .skills-pack .skills-icons i {
-    font-size: 50px;
+.icon-css3 {
+    background-image: url(../img/css.svg);
 }
+
+.icon-rwd {
+    background-image: url(../img/rwd.svg);
+}
+
+.icon-sass {
+    background-image: url(../img/sass.svg);
+}
+
+.icon-javascript {
+    background-image: url(../img/js.svg);
+}
+
+.icon-jquery {
+    background-image: url(../img/jquery.svg);
+}
+
+.icon-git {
+    background-image: url(../img/git.svg);
+}
+
+.icon-bootstrap {
+    background-image: url(../img/bootstrap.svg);
+}
+
+.icon-gulp {
+    background-image: url(../img/gulp.svg);
+}
+
+.icon-ajax {
+    background-image: url(../img/ajax.svg);
+}
+
+.icon-wordpress {
+    background-image: url(../img/wordpress.svg);
+}
+
 
 #skills #skills-container .skills-pack h2 {
     color: #c5c6c7;
@@ -451,19 +495,132 @@ li:hover i,
 }
 
 #picture {
-    height: 250px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../img/portfolio.jpg);
+    height: 150px;
+    background-image: url(../img/portfolio-2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
 }
+
+#picture .parallax {
+    height: 100%;
+}
+#picture .parallax {
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+/*Portfolio*/
+
+#portfolio {
+/*
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+*/
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+#slider {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    
+}
+
+.slide-show {
+    position: absolute; 
+    height: 100%;
+    
+}
+
+.single-slide {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+img {
+    width: 40%;
+    height: auto;
+}
+
+.slide-caption {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    color: white;    
+}
+
+.slider-arrows button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 6;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+}
+
+.flaticon-back::before, 
+.flaticon-right-arrow-circular-button::before {
+    color: transparent;
+    font-size: 50px;
+    margin: 0;
+}
+
+.slider-arrows button:hover .flaticon-back::before, .slider-arrows button:hover
+.flaticon-right-arrow-circular-button::before {
+    transition: color 0.5s ease-in-out;
+    color: #47ffef;
+}
+
+.slider-arrows button:focus {
+    outline: none;
+}
+
+.prev-slide {
+    position: absolute;
+    left: 0; 
+}
+
+.next-slide {
+    position: absolute;
+    right: 0;
+}
+
+.slide-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#portfolio .slide-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 1px solid #47ffef;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+}
+
 
 /*Contact*/
 
 #contact {
-    margin-bottom: 60px;
+        margin-bottom: 60px;
 }
 
 #contact h1 {
@@ -590,7 +747,7 @@ textarea {
 #contact .form-row input::placeholder,
 textarea::placeholder {
     color: #c5c6c7;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-size: 13px;
 }
 
@@ -617,7 +774,7 @@ textarea:focus {
 }
 
 #contact .form-row input[type="submit"]:hover,
-#about .btn-about:hover {
+#about .btn-about:hover, #portfolio .slide-buttons a:hover {
     background-color: #47ffef;
     color: #1f2833;
     text-shadow: none;
@@ -625,7 +782,7 @@ textarea:focus {
 }
 
 #contact .form-row input[type="submit"]:active,
-#about .btn-about:active {
+#about .btn-about:active, #portfolio .slide-buttons a:active {
     transform: translateY(4px)
 }
 

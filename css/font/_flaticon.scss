@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 06/07/2018 21:38
+    Creation date: 13/07/2018 12:08
     */
 
     @font-face {
@@ -36,76 +36,88 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-pointing-right-2:before { content: "\f100"; }
-.flaticon-pointing-right-1:before { content: "\f101"; }
-.flaticon-pointing-right:before { content: "\f102"; }
-.flaticon-double-arrow:before { content: "\f103"; }
-.flaticon-next-1:before { content: "\f104"; }
-.flaticon-sketch:before { content: "\f105"; }
-.flaticon-arrow-1:before { content: "\f106"; }
-.flaticon-next:before { content: "\f107"; }
-.flaticon-fast-forward:before { content: "\f108"; }
-.flaticon-chevron:before { content: "\f109"; }
-.flaticon-send:before { content: "\f10a"; }
-.flaticon-right:before { content: "\f10b"; }
-.flaticon-responsive-design-symbol:before { content: "\f10c"; }
-.flaticon-whatsapp:before { content: "\f10d"; }
-.flaticon-linkedin:before { content: "\f10e"; }
-.flaticon-github:before { content: "\f10f"; }
-.flaticon-google-plus:before { content: "\f110"; }
-.flaticon-facebook:before { content: "\f111"; }
-.flaticon-multimedia-option:before { content: "\f112"; }
-.flaticon-down-arrow-2:before { content: "\f113"; }
-.flaticon-download-3:before { content: "\f114"; }
-.flaticon-down-arrow-1:before { content: "\f115"; }
-.flaticon-down-arrow:before { content: "\f116"; }
-.flaticon-download-2:before { content: "\f117"; }
-.flaticon-download:before { content: "\f118"; }
-.flaticon-arrow:before { content: "\f119"; }
-.flaticon-design-skills:before { content: "\f11a"; }
-.flaticon-skills-2:before { content: "\f11b"; }
-.flaticon-body-building:before { content: "\f11c"; }
-.flaticon-skills-1:before { content: "\f11d"; }
-.flaticon-skills:before { content: "\f11e"; }
-.flaticon-passport:before { content: "\f11f"; }
-.flaticon-portfolio:before { content: "\f120"; }
-.flaticon-message:before { content: "\f121"; }
-.flaticon-home:before { content: "\f122"; }
-.flaticon-question:before { content: "\f123"; }
+    .flaticon-right-arrow-circular-button:before { content: "\f100"; }
+.flaticon-back:before { content: "\f101"; }
+.flaticon-loop:before { content: "\f102"; }
+.flaticon-css-3:before { content: "\f103"; }
+.flaticon-html5:before { content: "\f104"; }
+.flaticon-responsive-devices:before { content: "\f105"; }
+.flaticon-pointing-right-2:before { content: "\f106"; }
+.flaticon-pointing-right-1:before { content: "\f107"; }
+.flaticon-pointing-right:before { content: "\f108"; }
+.flaticon-double-arrow:before { content: "\f109"; }
+.flaticon-next-1:before { content: "\f10a"; }
+.flaticon-sketch:before { content: "\f10b"; }
+.flaticon-arrow-1:before { content: "\f10c"; }
+.flaticon-next:before { content: "\f10d"; }
+.flaticon-fast-forward:before { content: "\f10e"; }
+.flaticon-chevron:before { content: "\f10f"; }
+.flaticon-send:before { content: "\f110"; }
+.flaticon-right:before { content: "\f111"; }
+.flaticon-responsive-design-symbol:before { content: "\f112"; }
+.flaticon-whatsapp:before { content: "\f113"; }
+.flaticon-linkedin:before { content: "\f114"; }
+.flaticon-github:before { content: "\f115"; }
+.flaticon-google-plus:before { content: "\f116"; }
+.flaticon-facebook:before { content: "\f117"; }
+.flaticon-multimedia-option:before { content: "\f118"; }
+.flaticon-down-arrow-2:before { content: "\f119"; }
+.flaticon-download-3:before { content: "\f11a"; }
+.flaticon-down-arrow-1:before { content: "\f11b"; }
+.flaticon-down-arrow:before { content: "\f11c"; }
+.flaticon-download-2:before { content: "\f11d"; }
+.flaticon-download:before { content: "\f11e"; }
+.flaticon-arrow:before { content: "\f11f"; }
+.flaticon-design-skills:before { content: "\f120"; }
+.flaticon-skills-2:before { content: "\f121"; }
+.flaticon-body-building:before { content: "\f122"; }
+.flaticon-skills-1:before { content: "\f123"; }
+.flaticon-skills:before { content: "\f124"; }
+.flaticon-passport:before { content: "\f125"; }
+.flaticon-portfolio:before { content: "\f126"; }
+.flaticon-message:before { content: "\f127"; }
+.flaticon-home:before { content: "\f128"; }
+.flaticon-question:before { content: "\f129"; }
     
-    $font-Flaticon-pointing-right-2: "\f100";
-    $font-Flaticon-pointing-right-1: "\f101";
-    $font-Flaticon-pointing-right: "\f102";
-    $font-Flaticon-double-arrow: "\f103";
-    $font-Flaticon-next-1: "\f104";
-    $font-Flaticon-sketch: "\f105";
-    $font-Flaticon-arrow-1: "\f106";
-    $font-Flaticon-next: "\f107";
-    $font-Flaticon-fast-forward: "\f108";
-    $font-Flaticon-chevron: "\f109";
-    $font-Flaticon-send: "\f10a";
-    $font-Flaticon-right: "\f10b";
-    $font-Flaticon-responsive-design-symbol: "\f10c";
-    $font-Flaticon-whatsapp: "\f10d";
-    $font-Flaticon-linkedin: "\f10e";
-    $font-Flaticon-github: "\f10f";
-    $font-Flaticon-google-plus: "\f110";
-    $font-Flaticon-facebook: "\f111";
-    $font-Flaticon-multimedia-option: "\f112";
-    $font-Flaticon-down-arrow-2: "\f113";
-    $font-Flaticon-download-3: "\f114";
-    $font-Flaticon-down-arrow-1: "\f115";
-    $font-Flaticon-down-arrow: "\f116";
-    $font-Flaticon-download-2: "\f117";
-    $font-Flaticon-download: "\f118";
-    $font-Flaticon-arrow: "\f119";
-    $font-Flaticon-design-skills: "\f11a";
-    $font-Flaticon-skills-2: "\f11b";
-    $font-Flaticon-body-building: "\f11c";
-    $font-Flaticon-skills-1: "\f11d";
-    $font-Flaticon-skills: "\f11e";
-    $font-Flaticon-passport: "\f11f";
-    $font-Flaticon-portfolio: "\f120";
-    $font-Flaticon-message: "\f121";
-    $font-Flaticon-home: "\f122";
-    $font-Flaticon-question: "\f123";
+    $font-Flaticon-right-arrow-circular-button: "\f100";
+    $font-Flaticon-back: "\f101";
+    $font-Flaticon-loop: "\f102";
+    $font-Flaticon-css-3: "\f103";
+    $font-Flaticon-html5: "\f104";
+    $font-Flaticon-responsive-devices: "\f105";
+    $font-Flaticon-pointing-right-2: "\f106";
+    $font-Flaticon-pointing-right-1: "\f107";
+    $font-Flaticon-pointing-right: "\f108";
+    $font-Flaticon-double-arrow: "\f109";
+    $font-Flaticon-next-1: "\f10a";
+    $font-Flaticon-sketch: "\f10b";
+    $font-Flaticon-arrow-1: "\f10c";
+    $font-Flaticon-next: "\f10d";
+    $font-Flaticon-fast-forward: "\f10e";
+    $font-Flaticon-chevron: "\f10f";
+    $font-Flaticon-send: "\f110";
+    $font-Flaticon-right: "\f111";
+    $font-Flaticon-responsive-design-symbol: "\f112";
+    $font-Flaticon-whatsapp: "\f113";
+    $font-Flaticon-linkedin: "\f114";
+    $font-Flaticon-github: "\f115";
+    $font-Flaticon-google-plus: "\f116";
+    $font-Flaticon-facebook: "\f117";
+    $font-Flaticon-multimedia-option: "\f118";
+    $font-Flaticon-down-arrow-2: "\f119";
+    $font-Flaticon-download-3: "\f11a";
+    $font-Flaticon-down-arrow-1: "\f11b";
+    $font-Flaticon-down-arrow: "\f11c";
+    $font-Flaticon-download-2: "\f11d";
+    $font-Flaticon-download: "\f11e";
+    $font-Flaticon-arrow: "\f11f";
+    $font-Flaticon-design-skills: "\f120";
+    $font-Flaticon-skills-2: "\f121";
+    $font-Flaticon-body-building: "\f122";
+    $font-Flaticon-skills-1: "\f123";
+    $font-Flaticon-skills: "\f124";
+    $font-Flaticon-passport: "\f125";
+    $font-Flaticon-portfolio: "\f126";
+    $font-Flaticon-message: "\f127";
+    $font-Flaticon-home: "\f128";
+    $font-Flaticon-question: "\f129";
