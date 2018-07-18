@@ -125,7 +125,12 @@ a:hover {
 
 #main-nav ul li:hover span,
 li:hover i,
-#home span a i:hover {
+#home span a i:hover, #main-nav ul li:focus span,
+li:focus i,
+#home span a i:focus, #main-nav ul li:active span,
+li:active i,
+#home span a i:active
+{
     color: #47ffef;
     text-shadow: 0 0 5px #47ffef;
 }
@@ -652,7 +657,7 @@ img {
 #contact #contact-info #social-icons-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 20px 0 20px 0;
 }
 
