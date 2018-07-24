@@ -80,3 +80,25 @@ $(function () {
         }, 600);
     });
 });
+
+$(function () {
+        var sections = $('section'),
+            navigation = $('nav');
+
+        $(window).on('scroll', function () {
+            var currentPosition = $(this).scrollTop();
+
+            sections.each(function () {
+                var top = $(this).offset().top-120,
+                    bottom = top + $(this).outerHeight(true);
+
+                if (currentPosition >= top && currentPosition <= bottom) {
+                    navigation.find('a').removeClass('active');
+                    sections.removeClass('active');
+
+                    $(this).addClass('active');
+                    navigation.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+                }
+            });
+        });
+    });

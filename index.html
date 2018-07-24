@@ -14,13 +14,13 @@
 <body>
     <!--NAVIGATION START-->
     <div class="nav-and-logo">
-        <a href="" id="logo"><img src="img/logo.png" alt="logo"></a>
+        <a href="#" id="logo"><img src="img/logo.png" alt="logo"></a>
         <nav id="main-nav">
             <ul>
                 <li><a href="#home"><i class="flaticon-home"></i><span>START</span></a></li>
                 <li><a href="#about"><i class="flaticon-question"></i><span>O MNIE</span></a></li>
                 <li><a href="#skills"><i class="flaticon-body-building"></i><span>UMIEJĘTNOŚCI</span></a></li>
-                <li><a href="#picture"><i class="flaticon-passport"></i><span>PORTFOLIO</span></a></li>
+                <li><a href="#portfolio"><i class="flaticon-passport"></i><span>PORTFOLIO</span></a></li>
                 <li><a href="#contact"><i class="flaticon-message"></i><span>KONTAKT</span></a></li>
             </ul>
         </nav>
@@ -68,7 +68,7 @@
     <!--SKILLS START-->
     <section id="skills">
         <h1 class="scroll-reveall">Umiejętności</h1>
-        <div id="skills-container">
+        <div class="skills-container">
             <div class="skills-pack">
                 <h2>Sprawnie posługuję się:</h2>
                 <div class="skills-icons scroll-reveall">
@@ -133,14 +133,15 @@
         </div>
     </section>
     <!--SKILLS END-->
-    <section id="picture">
-        <div class="parallax">
-            <h1 class="scroll-reveall">Portfolio</h1>
-        </div>
-    </section>
+
     <!--PORTFOLIO START-->
     <section id="portfolio">
-        <div id="slider">
+        <div class="picture">
+            <div class="parallax">
+                <h1 class="scroll-reveall">Portfolio</h1>
+            </div>
+        </div>
+        <div class="slider">
             <div class="slider-arrows">
                 <button class="prev-slide"><i class="flaticon-back"></i>
 </button>
@@ -157,7 +158,7 @@
                             <a target="_blank" href="https://github.com/grabczakkamil/portfolio-kamil-grabczak">Github</a>
                         </div>
                     </div>
-                    <img src="img/laptop%20white.png" alt="">
+                    <img src="img/laptop-portfolio.png" alt="">
                 </div>
                 <div class="single-slide">
                     <div class="slide-caption">
@@ -165,23 +166,23 @@
                         <h2>Responsywny Układ Okresowy Pierwiastków</h2>
                         <p>Opracowanie projektu graficznego strony i zakodowanie jej przy użyciu HTML5 oraz CSS3. Strona dostosowana do wyświetlania na różnych urządzeniach.</p>
                         <div class="slide-buttons">
-                            <a target="_blank" href="https://grabczakkamil.github.io/Uklad%20okresowy%20pierwiastk%C3%B3w%20z%20RWD/">Online</a>
+                            <a target="_blank" href="https://grabczakkamil.github.io/uklad-okresowy-pierwiastkow/">Online</a>
                             <a target="_blank" href="https://github.com/grabczakkamil/uklad-okresowy-pierwiastkow">Github</a>
                         </div>
                     </div>
-                    <img src="img/laptop%20white.png" alt="">
+                    <img src="img/laptop-uklad-okresowy.png" alt="">
                 </div>
                 <div class="single-slide">
                     <div class="slide-caption">
                         <h3>STRONA WWW</h3>
-                    <h2>Formularze</h2>
+                        <h2>Formularze</h2>
                         <p>Zakodowany darmowy projekt graficzny PSD do HTML5 i CSS3. Projekt strony został wykonany stosując podejście mobile first.</p>
                         <div class="slide-buttons">
                             <a target="_blank" href="https://grabczakkamil.github.io/Weekly-Webdev-Challenge-1/">Online</a>
                             <a target="_blank" href="https://github.com/grabczakkamil/Weekly-Webdev-Challenge-1">Github</a>
                         </div>
                     </div>
-                    <img src="img/laptop%20white.png" alt="">
+                    <img src="img/laptop-formularze.png" alt="">
                 </div>
             </div>
         </div>
@@ -191,18 +192,18 @@
     <!--CONTACT START-->
     <section id="contact">
         <h1 class="scroll-reveall">Kontakt</h1>
-        <div id="form-container">
-            <div class="form-row  scroll-reveall" id="contact-info">
+        <div class="form-container">
+            <div class="form-row scroll-reveall">
                 <p>Masz jakieś <span>pytanie</span>?<br>Chcesz <span>zatrudnić</span> mnie w swojej firmie?<br>Napisz używając <span>formularza</span> kontaktowego<br>lub bezpośrednio na adres <span><a href="mailto:grabczakkamil@gmail.com" >grabczakkamil@gmail.com</a></span></p>
-                <p>Znajdziesz mnie również na </p>
-                <div id="social-icons-row">
-                    <a href="https://www.facebook.com/kamil.grabczak.9"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://pl.linkedin.com/in/grabczakkamil" id="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/grabczakkamil" id="github"><i class="fab fa-github"></i></a>
+                <p>Znajdziesz mnie również na:</p>
+                <div class="social-icons-row">
+                    <a target="_blank" href="https://www.facebook.com/kamil.grabczak.9"><i class="fab fa-facebook-f"></i></a>
+                    <a target="_blank" href="https://pl.linkedin.com/in/grabczakkamil" id="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a target="_blank" href="https://github.com/grabczakkamil" id="github"><i class="fab fa-github"></i></a>
                 </div>
                 <p>Czekam na <span>Twoją</span> wiadomość.</p>
             </div>
-            <form class="form-row  scroll-reveall" action="">
+            <form class="form-row scroll-reveall" action="">
                 <label for="name"></label>
                 <input type="text" id="name" placeholder="Imię i nazwisko">
                 <label for="email"></label>
@@ -219,8 +220,8 @@
     <!--FOOTER START-->
     <footer>
         <p>Wszelkie prawa zastrzeżone <a href="#">Kamil Grabczak</a> &copy; 2018</p>
-        <p>Icons made by <a href="https://www.flaticon.com/authors/vitaly-gorbachev">Vitaly Gorbachev, </a> <a href="https://www.flaticon.com/authors/iconnice">Iconnice, </a> <a href="https://www.flaticon.com/authors/eucalyp">Eucalyp, </a> <a href="https://www.flaticon.com/authors/freepik">Freepik, </a> <a href="https://www.flaticon.com/authors/good-ware">Good Ware</a> from <a href="https://www.flaticon.com">Flaticon</a>.</p>
-        <p>Photo by <a href="https://unsplash.com/@badashproducts">Ash Edmonds</a> from <a href="https://unsplash.com/">Unsplash</a></p>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/iconnice">Iconnice, </a> <a href="https://www.flaticon.com/authors/eucalyp">Eucalyp, </a> <a href="https://www.flaticon.com/authors/freepik">Freepik, </a> <a href="https://www.flaticon.com/authors/good-ware">Good Ware, </a> <a href="https://www.flaticon.com/authors/smashicons">Smashicons, </a> <a href="https://www.flaticon.com/authors/swifticons">Swifticons</a> from <a href="https://www.flaticon.com">Flaticon</a>.</p>
+        <p>Photo by <a href="https://unsplash.com/@dhaval">Dhaval Parmar, </a> <a href="https://unsplash.com/@grohsfabian">Fabian Grohs</a> from <a href="https://unsplash.com/">Unsplash</a></p>
     </footer>
     <!--FOOTER END-->
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.9/scrollreveal.min.js"></script>
