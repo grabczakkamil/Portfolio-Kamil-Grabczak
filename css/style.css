@@ -13,11 +13,18 @@ body {
 }
 
 button,
-input, textarea, input::placeholder, textarea::placeholder {
+input,
+textarea,
+input::placeholder,
+textarea::placeholder {
     font-family: 'Comfortaa', sans-serif;
 }
 
-button:focus, textarea:focus, input:focus, textarea:active, input:active  {
+button:focus,
+textarea:focus,
+input:focus,
+textarea:active,
+input:active {
     outline: none;
 }
 
@@ -52,7 +59,7 @@ button:focus, textarea:focus, input:focus, textarea:active, input:active  {
 
 section,
 footer {
-    margin: 0 0 0 120px;
+    margin: 0 0 0 95px;
 }
 
 h1 {
@@ -80,7 +87,7 @@ a:hover {
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
     display: flex;
     flex-direction: column;
-/*    align-items: center;*/
+    /*    align-items: center;*/
 }
 
 /*Navigation*/
@@ -88,7 +95,7 @@ a:hover {
 .nav-and-logo {
     position: fixed;
     height: 100%;
-    width: 120px;
+    width: 95px;
     z-index: 1;
     background-color: #000;
 }
@@ -100,7 +107,7 @@ a:hover {
 }
 
 .nav-and-logo #main-nav {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .nav-and-logo #main-nav ul {
@@ -120,7 +127,7 @@ a:hover {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 15px;
+    padding: 10px;
 }
 
 .flaticon-home::before,
@@ -163,7 +170,7 @@ a:hover {
 }
 
 #home header h1 {
-    margin: 10px 0 0 0;
+    margin: 40px 0 0 0;
     font-family: 'Pacifico', cursive;
     font-size: 60px;
     text-shadow: 0 0 20px #46f1d9;
@@ -250,9 +257,9 @@ a:hover {
 }
 
 #about .parallax .text-container .btn-about-question {
-/*    width: 900px;*/
+    /*    width: 900px;*/
     background-color: transparent;
-/*    text-align: left;*/
+    /*    text-align: left;*/
     border: none;
     color: #c5c6c7;
     text-shadow: 4px 4px 3px black;
@@ -571,7 +578,9 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-self: center;
     margin: 20px 0 20px 0;
+    width: 60%;
 }
 
 #contact .form-container .form-row .social-icons-row a {
@@ -699,4 +708,55 @@ footer p a {
 
 footer p a:hover {
     color: #deafdc;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 641px) {
+    section,
+    footer {
+        margin: 0 0 0 0;
+    }
+    /*
+    #home {
+        margin: 60px 0 0 0;
+    }
+*/
+    .nav-and-logo {
+        height: 60px;
+        width: 100%;
+        top: 0;
+        background-color: transparent;
+    }
+    .nav-and-logo #logo img {
+        width: auto;
+        height: 100%;
+        padding: 7px;
+    }
+    .nav-and-logo #main-nav {
+        position: absolute;
+        width: 150px;
+        right: 0px;
+        background-color: #1f2833;
+        opacity: 0.8;
+        box-shadow: 0 0 10px #1f2833;
+    }
+    .nav-and-logo #main-nav ul li {
+        height: 45px;
+    }
+    .nav-and-logo #main-nav ul li a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .flaticon-home::before,
+    .flaticon-question::before,
+    .flaticon-body-building::before,
+    .flaticon-passport::before,
+    .flaticon-message::before {
+        font-size: 20px;
+        margin: 0 10px 0 0;
+    }
+
 }
