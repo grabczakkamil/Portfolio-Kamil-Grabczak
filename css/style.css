@@ -106,7 +106,7 @@ a:hover {
     padding: 15px;
 }
 
-.nav-and-logo #main-nav {
+ #main-nav {
     font-size: 10px;
 }
 
@@ -390,7 +390,7 @@ a:hover {
 }
 
 #skills .skills-container .skills-pack .skills-icons .icon-with-name h3 {
-    margin: 0;
+    margin: 10px 0 0 0;
     font-weight: 100;
 }
 
@@ -717,39 +717,114 @@ footer p a:hover {
     footer {
         margin: 0 0 0 0;
     }
-    /*
+
     #home {
-        margin: 60px 0 0 0;
+        margin: 50px 0 0 0;
     }
-*/
+    /*Hamburger menu - start*/
+    .hamburger {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        padding: 12px 12px 6px 12px;
+        cursor: pointer;
+        
+    }
+    .hamburger span {
+        display: block;
+        background-color: #c5c6c7;
+        width: 100%;
+        border-radius: 2px;
+        margin-bottom: 6px;
+        height: 4px;
+        transition: 0.8s ease all;
+    }
+    .hamburger:hover span {
+        background-color: #47ffef;
+        text-shadow: 0 0 5px #47ffef;
+    }
+
+    .hamburger-active span.hamburger-second {
+        opacity: 0;
+    }
+
+    .hamburger-active span.hamburger-first {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .hamburger-active span.hamburger-third {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+    .hamburger-active #main-nav {
+        right: 0px;   
+    }
+    .hamburger-active #main-nav ul li {
+      opacity: 1;  
+    }
+  
     .nav-and-logo {
-        height: 60px;
         width: 100%;
         top: 0;
         background-color: transparent;
+        z-index: 6;
     }
+    .nav-and-logo #logo {
+        width: 100%;
+        height: 50px;
+        background-color: #000;
+        box-shadow: 0 0 15px #000;
+    }
+
     .nav-and-logo #logo img {
         width: auto;
-        height: 100%;
+        height: 50px;
         padding: 7px;
     }
-    .nav-and-logo #main-nav {
+     #main-nav {
         position: absolute;
-        width: 150px;
-        right: 0px;
+        width: 350px;
+        min-height: 100%;
+        right: -350px;
+        font-size: 16px;
         background-color: #1f2833;
-        opacity: 0.8;
+        opacity: 0.9;
         box-shadow: 0 0 10px #1f2833;
+        padding-top: 80px;
+         transition: 0.5s ease right;
+        
     }
     .nav-and-logo #main-nav ul li {
-        height: 45px;
+        height: 60px;
     }
     .nav-and-logo #main-nav ul li a {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
+    
+    #main-nav ul li {
+      opacity: 0;
+      transition: 1.5s ease-in-out;
+    }
+    
+    #main-nav ul li:nth-of-type(2) {
+        transition-delay: 0.2s;
+    }
+    
+     #main-nav ul li:nth-of-type(3) {
+        transition-delay: 0.4s;
+    }
+    
+    #main-nav ul li:nth-of-type(4) {
+        transition-delay: 0.6s;
+    }
+    
+    #main-nav ul li:nth-of-type(5) {
+        transition-delay: 0.8s;
+    }
+    
     .flaticon-home::before,
     .flaticon-question::before,
     .flaticon-body-building::before,
@@ -758,5 +833,7 @@ footer p a:hover {
         font-size: 20px;
         margin: 0 10px 0 0;
     }
+    
+      /*Hamburger menu - end*/
 
 }
