@@ -109,4 +109,4 @@ $(".hamburger").on("click", function() {
 	$(".nav-and-logo").toggleClass("hamburger-active")
 });
 
-}());
+});

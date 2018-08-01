@@ -106,7 +106,7 @@ a:hover {
     padding: 15px;
 }
 
- #main-nav {
+#main-nav {
     font-size: 10px;
 }
 
@@ -183,6 +183,7 @@ a:hover {
     transform: rotate(-5deg);
     color: #D901B4;
     text-shadow: 0 0 20px deeppink;
+    text-align: center;
 }
 
 #home span a i {
@@ -257,9 +258,7 @@ a:hover {
 }
 
 #about .parallax .text-container .btn-about-question {
-    /*    width: 900px;*/
     background-color: transparent;
-    /*    text-align: left;*/
     border: none;
     color: #c5c6c7;
     text-shadow: 4px 4px 3px black;
@@ -279,22 +278,22 @@ a:hover {
 
 #about .parallax .text-container .btn-about-question:nth-of-type(1),
 #about .parallax .text-container .about-question:nth-of-type(1) {
-    margin-left: 50px;
+    padding-left: 50px;
 }
 
 #about .parallax .text-container .btn-about-question:nth-of-type(2),
 #about .parallax .text-container .about-question:nth-of-type(2) {
-    margin-left: 100px;
+    padding-left: 100px;
 }
 
 #about .parallax .text-container .btn-about-question:nth-of-type(3),
 #about .parallax .text-container .about-question:nth-of-type(3) {
-    margin-left: 150px;
+    padding-left: 150px;
 }
 
 #about .parallax .text-container .btn-about-question:nth-of-type(4),
 #about .parallax .text-container .about-question:nth-of-type(4) {
-    margin-left: 200px;
+    padding-left: 200px;
 }
 
 #about .parallax .text-container span {
@@ -306,9 +305,16 @@ a:hover {
     text-shadow: 0 0 10px deeppink;
 }
 
+#about .parallax .text-container .about-question {
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 #about .parallax .text-container .about-question p {
-    width: 900px;
-    padding: 0 0 0 40px;
+    padding: 0 40px 0 40px;
 }
 
 #about .parallax .text-container .write-to-me,
@@ -326,14 +332,9 @@ a:hover {
 }
 
 #about .parallax .text-container .btn-about {
-    color: #c5c6c7;
-    border: 2px solid #47ffef;
-    box-shadow: 2px 2px 1px black;
-    border-radius: 5px;
     margin: 20px 0 80px 0;
     width: 200px;
     padding: 10px;
-    text-shadow: 3px 3px 1px black;
 }
 
 /*Skills*/
@@ -342,7 +343,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 600px;
     background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
@@ -356,19 +356,22 @@ a:hover {
 #skills .skills-container .skills-pack .skills-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
+/*
 #skills .skills-container .skills-pack:nth-of-type(2) .skills-icons {
     height: 200px;
 }
+*/
 
 #skills .skills-container .skills-pack .skills-icons .icon-with-name {
     transition: transform 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px 20px 0 20px;
 }
 
 #skills .skills-container .skills-pack .skills-icons .icon-with-name:hover {
@@ -378,7 +381,7 @@ a:hover {
 
 
 #skills .skills-container .skills-pack:nth-of-type(2) {
-    flex-basis: 300px;
+    flex-basis: 500px;
     margin-top: 50px;
 }
 
@@ -557,8 +560,16 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 80px;
+}
+
+#contact .form-container .form-row:nth-of-type(1){
+        margin-left: 80px;
     margin-right: 30px;
+}
+
+#contact .form-container .form-row:nth-of-type(2){
+    margin-right: 80px;
+    margin-left: 30px;
 }
 
 #contact .form-container form {
@@ -632,11 +643,6 @@ a:hover {
     top: 0%;
 }
 
-#contact .form-container form {
-    margin-right: 80px;
-    margin-left: 30px;
-}
-
 #contact .form-container form input {
     border: 0;
     border-bottom: 1px solid;
@@ -694,12 +700,12 @@ footer {
     text-align: center;
     background-color: #47ffef;
     color: black;
-    font-size: 10px;
     padding: 5px 0 5px 0;
 }
 
 footer p {
     margin: 0px;
+    font-size: 10px;
 }
 
 footer p a {
@@ -712,15 +718,24 @@ footer p a:hover {
 
 /*Media queries*/
 
-@media only screen and (max-width: 641px) {
+@media only screen and (max-width: 1007px) {
+    /*    general - start*/
+    #home {
+        margin: 50px 0 0 0;
+    }
+
     section,
     footer {
         margin: 0 0 0 0;
     }
-
-    #home {
-        margin: 50px 0 0 0;
+    h1 {
+        font-size: 40px;
     }
+
+    p {
+        font-size: 14px;
+    }
+    /*    general - end*/
     /*Hamburger menu - start*/
     .hamburger {
         position: absolute;
@@ -729,7 +744,7 @@ footer p a:hover {
         width: 50px;
         padding: 12px 12px 6px 12px;
         cursor: pointer;
-        
+
     }
     .hamburger span {
         display: block;
@@ -757,18 +772,20 @@ footer p a:hover {
         transform: rotate(-45deg) translate(7px, -7px);
     }
     .hamburger-active #main-nav {
-        right: 0px;   
+        right: 0px;
     }
     .hamburger-active #main-nav ul li {
-      opacity: 1;  
+        opacity: 1;
     }
-  
+
     .nav-and-logo {
         width: 100%;
+        height: 50px;
         top: 0;
         background-color: transparent;
         z-index: 6;
     }
+
     .nav-and-logo #logo {
         width: 100%;
         height: 50px;
@@ -781,50 +798,51 @@ footer p a:hover {
         height: 50px;
         padding: 7px;
     }
-     #main-nav {
+
+    #main-nav {
         position: absolute;
         width: 350px;
-        min-height: 100%;
         right: -350px;
         font-size: 16px;
         background-color: #1f2833;
         opacity: 0.9;
         box-shadow: 0 0 10px #1f2833;
-        padding-top: 80px;
-         transition: 0.5s ease right;
-        
+        padding-top: 10px;
+        transition: 0.5s ease right;
     }
+
     .nav-and-logo #main-nav ul li {
         height: 60px;
     }
+
     .nav-and-logo #main-nav ul li a {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    
+
     #main-nav ul li {
-      opacity: 0;
-      transition: 1.5s ease-in-out;
+        opacity: 0;
+        transition: 1.5s ease-in-out;
     }
-    
+
     #main-nav ul li:nth-of-type(2) {
         transition-delay: 0.2s;
     }
-    
-     #main-nav ul li:nth-of-type(3) {
+
+    #main-nav ul li:nth-of-type(3) {
         transition-delay: 0.4s;
     }
-    
+
     #main-nav ul li:nth-of-type(4) {
         transition-delay: 0.6s;
     }
-    
+
     #main-nav ul li:nth-of-type(5) {
         transition-delay: 0.8s;
     }
-    
+
     .flaticon-home::before,
     .flaticon-question::before,
     .flaticon-body-building::before,
@@ -833,7 +851,165 @@ footer p a:hover {
         font-size: 20px;
         margin: 0 10px 0 0;
     }
-    
-      /*Hamburger menu - end*/
+    /*Hamburger menu - end*/
+    /*   about - start*/
+    #about .parallax .text-container .btn-about-question {
+        font-size: 23px;
+        margin: 6px 0 6px 0;
+    }
+    #about .parallax .text-container .write-to-me {
+        margin-top: 20px;
+        line-height: 25px;
+    }
+    /*about - end*/
+    /*    skills - start*/
+    #skills .skills-container {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
 
+    #skills .skills-container .skills-pack:nth-of-type(2) {
+        flex-basis: auto;
+        margin-top: 0;
+    }
+
+    #skills .skills-container .skills-pack .skills-icons .icon-with-name h3 {
+        margin: 8px 0 0 0;
+        font-weight: 100;
+    }
+    #skills h1 {
+        margin-bottom: 30px;
+    }
+
+    #skills .skills-container .skills-pack {
+        margin-bottom: 30px;
+    }
+
+    #skills .skills-container .skills-pack h2 {
+        font-size: 18px;
+    }
+    #skills .skills-container .skills-pack h3 {
+        font-size: 12px;
+    }
+    #skills .skills-container .skills-pack .skills-icons .icon-with-name {
+        padding: 10px 15px 0 15px;
+    }
+    /*    skills - end*/
+    /*    portfolio - start*/
+    #portfolio .slider {
+        height: 400px;
+    }
+    #portfolio .slider .slide-show .single-slide h3 {
+        margin: 0 0 15px 0;
+    }
+    #portfolio .slider .slide-show .single-slide h2 {
+        margin: 0;
+    }
+
+    #portfolio .slider .slide-show .single-slide img {
+        width: 50%;
+        height: auto;
+    }
+
+    .flaticon-back::before,
+    .flaticon-right-arrow-circular-button::before {
+        font-size: 40px;
+    }
+
+
+    #portfolio .slider .slide-show .single-slide .slide-caption .slide-buttons a {
+        width: 110px;
+        height: 35px;
+        font-size: 14px;
+    }
+    /*portfolio - end*/
+    /*    contact - start*/
+
+#contact .form-container .form-row:nth-of-type(1), #contact .form-container .form-row:nth-of-type(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#contact .form-container form {
+    padding: 0 10px 0 0
+}
+
+#contact .form-container .form-row p {
+    line-height: 25px;
+}
+
+
+#contact .form-container .form-row .social-icons-row a {
+    width: 50px;
+    height: 50px;
+}
+
+#contact .form-container .form-row .social-icons-row a i {
+    font-size: 30px;
+}
+
+    /*    contact - end*/
+}
+
+@media only screen and (max-width: 641px) {
+
+    h1 {
+        font-size: 35px;
+    }
+    /*    home - start*/
+    #home header h1 {
+        margin: 40px 0 0 0;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    #home header h2 {
+        margin: 20px 0 0 0;
+        font-size: 20px;
+    }
+    #home header h1,
+    #home header h2 {
+        padding: 0 10% 0 10%;
+    }
+    /*    home - end*/
+    /*    about - start*/
+    #about .parallax h1 {
+        margin-bottom: 25px;
+    }
+
+    #about .parallax .text-container {
+        align-items: center;
+    }
+
+    #about .parallax .text-container .btn-about-question {
+        font-size: 20px;
+        margin: 6px 0 6px 0;
+    }
+    #about .parallax .text-container .about-question {
+        text-align: center;
+    }
+    .flaticon-pointing-right::before {
+        font-size: 25px;
+    }
+    #about .parallax .text-container .btn-about-question:nth-of-type(1),
+    #about .parallax .text-container .about-question:nth-of-type(1),
+    #about .parallax .text-container .btn-about-question:nth-of-type(2),
+    #about .parallax .text-container .about-question:nth-of-type(2),
+    #about .parallax .text-container .btn-about-question:nth-of-type(3),
+    #about .parallax .text-container .about-question:nth-of-type(3),
+    #about .parallax .text-container .btn-about-question:nth-of-type(4),
+    #about .parallax .text-container .about-question:nth-of-type(4) {
+        padding-left: 10px;
+    }
+
+    #about .parallax .text-container .write-to-me {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    /*    about - end*/
+    /* contact - start */
+    #contact .form-container {
+        flex-direction: column;
+    }
+    /* contact - end */
 }
