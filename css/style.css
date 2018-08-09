@@ -296,10 +296,12 @@ a:hover {
     padding-left: 200px;
 }
 
-#about .parallax .text-container span {
+#about .parallax .text-container .btn-about-question span {
     color: #D901B4;
 }
-
+#about .parallax .text-container .about-question span {
+    color: deeppink;
+}
 #about .parallax .text-container .btn-about-question:hover span {
     color: deeppink;
     text-shadow: 0 0 10px deeppink;
@@ -648,6 +650,7 @@ a:hover {
     border-bottom: 1px solid;
     height: 30px;
     padding: 0 0 5px 10px;
+    -webkit-appearance: none;
 }
 
 #contact .form-container form textarea {
@@ -679,7 +682,6 @@ a:hover {
     padding: 0;
     margin: 25px 0 0 0;
     align-self: center;
-    -webkit-appearance: none;
 }
 
 /*Social icons animation*/
@@ -754,7 +756,7 @@ footer p a:hover {
         border-radius: 2px;
         margin-bottom: 6px;
         height: 4px;
-        transition: 0.8s ease all;
+        transition: 0.5s ease all;
     }
     .hamburger:hover span {
         background-color: #47ffef;
@@ -784,7 +786,7 @@ footer p a:hover {
         height: 50px;
         top: 0;
         background-color: transparent;
-        z-index: 6;
+        z-index: 7;
     }
 
     .nav-and-logo #logo {
@@ -825,23 +827,23 @@ footer p a:hover {
 
     #main-nav ul li {
         opacity: 0;
-        transition: 1.5s ease-in-out;
+        transition: 1s ease-in-out;
     }
 
     #main-nav ul li:nth-of-type(2) {
-        transition-delay: 0.2s;
+        transition-delay: 0.1s;
     }
 
     #main-nav ul li:nth-of-type(3) {
-        transition-delay: 0.4s;
+        transition-delay: 0.2s;
     }
 
     #main-nav ul li:nth-of-type(4) {
-        transition-delay: 0.6s;
+        transition-delay: 0.3s;
     }
 
     #main-nav ul li:nth-of-type(5) {
-        transition-delay: 0.8s;
+        transition-delay: 0.4s;
     }
 
     .flaticon-home::before,
@@ -858,9 +860,13 @@ footer p a:hover {
         font-size: 23px;
         margin: 6px 0 6px 0;
     }
+    #about .parallax .text-container .about-question p {
+    font-size: 14px;
+}
     #about .parallax .text-container .write-to-me {
-        margin-top: 20px;
+        margin-top: 16px;
         line-height: 25px;
+        font-size: 16px;
     }
     /*about - end*/
     /*    skills - start*/
@@ -948,7 +954,10 @@ footer p a:hover {
     #contact .form-container .form-row .social-icons-row a i {
         font-size: 30px;
     }
-
+footer p {
+    margin: 0px;
+    font-size: 7px;
+}
     /*    contact - end*/
 }
 
@@ -1004,18 +1013,21 @@ footer p a:hover {
     }
 
     #about .parallax .text-container .write-to-me {
-        font-size: 16px;
         line-height: 30px;
     }
     /*    about - end*/
+    
+/*    skills - start*/
+    #skills .skills-container .skills-pack h2 {
+        font-size: 15px;
+    }
+    #skills .skills-container .skills-pack h3 {
+        font-size: 10px;
+    }
+/*    skills - end*/
+    
     /*    portfolio - start*/
     #portfolio .slider .slide-show .single-slide {
-        /*
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    display: flex;
-*/
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
@@ -1024,25 +1036,18 @@ footer p a:hover {
     }
     #portfolio .slider .slide-show .single-slide img {
         width: 75%;
-        /*    height: auto;*/
     }
 
     #portfolio .slider .slide-show .single-slide .slide-caption {
         width: 75%;
-        /*
-    display: flex;
-    flex-direction: column;
-    z-index: 5;
-    color: white;
-*/
     }
-    #skills .skills-container .skills-pack h2 {
-        font-size: 15px;
-    }
-    #skills .skills-container .skills-pack h3 {
-        font-size: 10px;
+    
+    
+        #portfolio .slider {
+        height: 500px;
     }
     /*    portfolio - end*/
+    
     /* contact - start */
     #contact {
         margin-bottom: 30px;
@@ -1078,15 +1083,5 @@ footer p a:hover {
     #contact .form-container .form-row .social-icons-row {
         width: 90%;
     }
-
-    /*
-#contact .form-container form input[type="submit"] {
-    width: 150px;
-    height: 40px;
-    padding: 0;
-    margin: 25px 0 0 0;
-    align-self: center;
-}
-*/
     /* contact - end */
 }
