@@ -967,14 +967,20 @@ footer p {
         font-size: 35px;
     }
     /*    home - start*/
+    
+    #home {
+/*    background-image: url(../img/home-page - mobile.jpg);*/
+    height: 580px;
+}
+    
     #home header h1 {
-        margin: 40px 0 0 0;
+        margin: 8% 0 0 0;
         font-size: 40px;
         line-height: 50px;
     }
 
     #home header h2 {
-        margin: 20px 0 0 0;
+        margin: 5% 0 0 0;
         font-size: 20px;
     }
     #home header h1,
@@ -983,6 +989,13 @@ footer p {
     }
     /*    home - end*/
     /*    about - start*/
+    
+    #about {
+        
+    background-image: url(../img/mobile-about.JPEG);
+}
+
+    
     #about .parallax h1 {
         margin-bottom: 25px;
     }
